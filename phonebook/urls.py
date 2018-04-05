@@ -17,6 +17,6 @@ from django.contrib import admin
 from django.conf.urls import include, url
 
 urlpatterns = [
-    url(r'^contact/', include('contact.urls'), name='contact'),
+    url(r'^contact/', include('contact.urls', namespace="contact"), name='contact'),
     url('admin/', admin.site.urls),
 ]
