@@ -1,0 +1,14 @@
+<html>
+
+	<head>
+		CREATE <br/>
+	</head>
+
+	<form method="post" action="{% url 'contact:create-post' %}">
+		{% csrf_token  %}
+		<input placeholder="Name" type="text" name="name"> <br/>
+		<input placeholder="Phone" type="text" name="phone"> <br/>
+			<input type="submit" name="create"> <br>
+	</form>
+
+</html>
