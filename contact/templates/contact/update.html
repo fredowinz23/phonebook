@@ -1,0 +1,23 @@
+<head>
+	<title>Update Contact</title>
+</head>
+
+<body>
+	<center>
+		
+		<fieldset style="background-color:233d44">
+			<h1 style="color:white" style="font-family:dejavu serif" ><center><b>Update Contact</b></center></h1>
+		</fieldset>
+
+		<form method="POST" action="{%url 'contact:update-post' contact.id %}">
+	    	{% csrf_token %}
+	 		<br><br>
+	 		Name:<br>
+	  		<input type="text" value="{{contact.name}}" name="name"><br>
+	  		Phone:<br>
+	  		<input type="text" value="{{contact.phone}}" name="phone"><br>
+	  		<input type="submit" value="Update" name="update">
+	  		<a href="{% url 'contact:delete-post' contact.id %}" > Delete </a>
+		</form>
+	</center>
+</body>
