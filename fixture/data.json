@@ -1,0 +1,10 @@
+[
+    {
+        "model": "contact.contact",
+        "pk": 1,
+        "fields": {
+            "name": "christan",
+            "phone": "09274298113"
+        }
+    }
+]
