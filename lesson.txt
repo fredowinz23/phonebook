@@ -1,0 +1,2 @@
+git checkout -b iss12  ---make working branch
+git reset --hard
